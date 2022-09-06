@@ -1,0 +1,23 @@
+.app {
+  margin: 0 auto;
+  max-width: 1170px;
+  padding: 0 15px;
+}
+
+.app__block-body {
+  display: none;
+}
+
+.app__block-header.active {
+  background-color: forestgreen;
+}
+
+.app__block-header.active + .app__block-body {
+  padding: 5px 0;
+  display: block;
+}
+
+.app__total-price {
+  font-size: 24px;
+  color: red;
+}

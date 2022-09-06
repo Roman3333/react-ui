@@ -30,7 +30,7 @@ function App() {
   ];
   const [selected, setSelected] = useState(null);
 
-  const changeAccprdion = (i) => {
+  const changeAccaprdion = (i) => {
     if (selected == i) {
       return setSelected(null);
     }
@@ -45,7 +45,7 @@ function App() {
             <div className="accardion__item" key={index}>
               <div
                 className={selected == index ? 'accardion__title show' : 'accardion__title'}
-                onClick={() => changeAccprdion(index)}>
+                onClick={() => changeAccaprdion(index)}>
                 {item.title}
               </div>
               <div className={selected == index ? 'accardion__content show' : 'accardion__content'}>
